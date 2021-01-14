@@ -1,0 +1,8 @@
+<launch>
+
+  <arg name="method"   default="default" />
+  <node name="add_two_ints_server" pkg="hnna_pkg_test" type="server_hmm.py" output="screen">
+    <param name="method" value="$(arg method)" />
+  </node>
+
+</launch>
